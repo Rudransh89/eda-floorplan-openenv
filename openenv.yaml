@@ -1,0 +1,11 @@
+version: "1.0"
+benchmark: "eda_floorplan"
+description: "Simulates Electronic Design Automation macro placement on a silicon grid."
+entrypoint: "eda_env:EDAFloorplanEnv"
+tasks:
+  - name: "place_basic"
+    difficulty: "easy"
+  - name: "place_routed"
+    difficulty: "medium"
+  - name: "place_thermal"
+    difficulty: "hard"

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eda-floorplan-openenv"
+version = "1.0.0"
+description = "An OpenEnv RL benchmark for EDA floorplanning."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openenv-core",
+    "pydantic",
+    "openai",
+    "numpy",
+    "matplotlib",
+    "fastapi",
+    "uvicorn"
+]
+
+[project.scripts]
+server = "server.app:main"
